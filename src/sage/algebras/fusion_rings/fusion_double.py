@@ -244,7 +244,7 @@ class FusionDouble(CombinatorialFreeModule):
 
         See :meth:`s_ij`.
 
-        EXAMPLES ::
+        EXAMPLES::
 
             sage: P=FusionDouble(CyclicPermutationGroup(3),prefix="p",inject_variables=True)
             sage: P.s_ij(p1,p3)
@@ -502,7 +502,7 @@ class FusionDouble(CombinatorialFreeModule):
         quantum dimensions of the simple objects.
         For the Drinfeld double, it is the square of the order of the underlying quantum group.
 
-        EXAMPLE ::
+        EXAMPLES::
 
             sage: G = SymmetricGroup(4)
             sage: H = FusionDouble(G)
@@ -609,7 +609,9 @@ class FusionDouble(CombinatorialFreeModule):
         r"""
         Return the dual object ``i^\ast`` to ``i``. The dual is also
         available as an element method of ``i``.
-
+        
+        EXAMPLES::
+        
             sage: K = FusionDouble(CyclicPermutationGroup(3),prefix="k")
             sage: [(x,K.dual(x)) for x in K.basis()]
             [(k0, k0),
